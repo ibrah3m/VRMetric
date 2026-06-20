@@ -1,0 +1,5 @@
+com.oculus.ovrmonitormetricsservice.test-updated_navigation_xml-0 C:\Users\iqdvi\Documents\reverse\metrics\vr_overlay_native\app\build\generated\updated_navigation_xml\debugAndroidTest
+com.oculus.ovrmonitormetricsservice.test-packageDebugAndroidTestResources-1 C:\Users\iqdvi\Documents\reverse\metrics\vr_overlay_native\app\build\intermediates\incremental\debugAndroidTest\packageDebugAndroidTestResources\merged.dir
+com.oculus.ovrmonitormetricsservice.test-packageDebugAndroidTestResources-2 C:\Users\iqdvi\Documents\reverse\metrics\vr_overlay_native\app\build\intermediates\incremental\debugAndroidTest\packageDebugAndroidTestResources\stripped.dir
+com.oculus.ovrmonitormetricsservice.test-debugAndroidTest-3 C:\Users\iqdvi\Documents\reverse\metrics\vr_overlay_native\app\build\intermediates\merged_res\debugAndroidTest\mergeDebugAndroidTestResources
+gradleHome-0 C:\Users\iqdvi\.gradle

@@ -1,0 +1,294 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Users\iqdvi\Documents\reverse\metrics\vr_overlay_native\app\src\main\AndroidManifest.xml:2:1-54:12
+INJECTED from C:\Users\iqdvi\Documents\reverse\metrics\vr_overlay_native\app\src\main\AndroidManifest.xml:2:1-54:12
+INJECTED from C:\Users\iqdvi\Documents\reverse\metrics\vr_overlay_native\app\src\main\AndroidManifest.xml:2:1-54:12
+INJECTED from C:\Users\iqdvi\Documents\reverse\metrics\vr_overlay_native\app\src\main\AndroidManifest.xml:2:1-54:12
+MERGED from [com.google.android.material:material:1.9.0] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\7b07f887f389cbdfa83f4456d3df109c\transformed\material-1.9.0\AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.appcompat:appcompat-resources:1.6.1] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\0d6ecc6b77f5d9f976d3a16c2abb7996\transformed\appcompat-resources-1.6.1\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\b1504ec4969f6bfd04b35d75f6c3b6d5\transformed\constraintlayout-2.0.1\AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.appcompat:appcompat:1.6.1] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\ca40241efded7819587679b12e0a2814\transformed\appcompat-1.6.1\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\2ed1198d86e6967884b61a1691e47ae9\transformed\viewpager2-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.fragment:fragment:1.3.6] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\2ac03ae0ef3b8fd1a48a11f05772b75c\transformed\fragment-1.3.6\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.activity:activity:1.6.0] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\3880bcd587b7ac26211c028b45d75a2b\transformed\activity-1.6.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.5.1] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\ef13823e750f19d6a4cce5dce0d2d8a1\transformed\lifecycle-viewmodel-savedstate-2.5.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\28395283fa0865766b4f7e1b2569f574\transformed\dynamicanimation-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\8bb742803a8df13cbdb103c193e6c57c\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\96ec6b53b5608d5421bb29f6657ae20a\transformed\loader-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.5.1] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\3b6074d96bcf1167b97a4cb46b88f301\transformed\lifecycle-viewmodel-2.5.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.savedstate:savedstate:1.2.0] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\efc3cc803704d4e37e50c6efd96ea5e9\transformed\savedstate-1.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\3d3caaeaf3f5669ca5f012fa82be14dc\transformed\emoji2-views-helper-1.2.0\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.emoji2:emoji2:1.2.0] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\9ba3f3f78bc75eb84e4e9a4984d4641c\transformed\emoji2-1.2.0\AndroidManifest.xml:17:1-35:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\a2b125d1b208d44031774bca0c22821b\transformed\drawerlayout-1.1.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\7007c76d672fabad510b2bd8a944d9c9\transformed\coordinatorlayout-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.transition:transition:1.2.0] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\3f6438153ce54d00f27cf304067563e2\transformed\transition-1.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\351180ca8cd2041cccbd54b867ed40e0\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\76d3e78fe792cabc29de374a8bb50692\transformed\vectordrawable-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.core:core-ktx:1.9.0] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\5c41e28d2bc81f3f3d9ff3b9821fff32\transformed\core-ktx-1.9.0\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\b6ff1ddd5ca347298384c4210c7cb2de\transformed\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\fb2c611f2a4ef0ea60b8554e1eb678b9\transformed\recyclerview-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.customview:customview:1.1.0] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\62f6f229b06d518bb513f80e59f3f3ef\transformed\customview-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.core:core:1.9.0] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\7241f257c8a6819728a3f1dfe976f7ce\transformed\core-1.9.0\AndroidManifest.xml:17:1-30:12
+MERGED from [androidx.annotation:annotation-experimental:1.3.0] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\09a16b3ef418aa88263db6a69e1f1c05\transformed\annotation-experimental-1.3.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\341a38283e72f86a2eca368d1fd0f5c9\transformed\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\c10ac40773446cf1dfb21c8c61c7c71b\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:17:1-37:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.5.1] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\e32eb057350f6ef8872d29bfa9ec359a\transformed\lifecycle-runtime-2.5.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\a74102a648068ee8b762fbde87c7ae0b\transformed\cardview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\deec094d872983af5af5716f65fe8974\transformed\startup-runtime-1.1.1\AndroidManifest.xml:17:1-33:12
+MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\acef31aa65e4a83fd54b9d6a90c6625e\transformed\tracing-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\933678d58fd489db33712c3b10fcebd6\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\7197e270694f0dd938265b60f8876c4f\transformed\lifecycle-livedata-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.5.1] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\bd31c0d5290af6e88e189da4a61c60f6\transformed\lifecycle-livedata-core-2.5.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\f6feb947b0ad01f524b0239464869906\transformed\core-runtime-2.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\80d24e07c55a31343578b39ec68d677f\transformed\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\1cf511694c0816ac6bfef1fd3365f1d4\transformed\documentfile-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\6dd9ea9e77263747fa71ec7a0cb147ec\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\1557a81668199d23a848bbba118b8e0c\transformed\print-1.0.0\AndroidManifest.xml:17:1-22:12
+	package
+		ADDED from C:\Users\iqdvi\Documents\reverse\metrics\vr_overlay_native\app\src\main\AndroidManifest.xml:3:5-36
+		INJECTED from C:\Users\iqdvi\Documents\reverse\metrics\vr_overlay_native\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from C:\Users\iqdvi\Documents\reverse\metrics\vr_overlay_native\app\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from C:\Users\iqdvi\Documents\reverse\metrics\vr_overlay_native\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\iqdvi\Documents\reverse\metrics\vr_overlay_native\app\src\main\AndroidManifest.xml:2:11-69
+uses-permission#android.permission.SYSTEM_ALERT_WINDOW
+ADDED from C:\Users\iqdvi\Documents\reverse\metrics\vr_overlay_native\app\src\main\AndroidManifest.xml:5:5-78
+	android:name
+		ADDED from C:\Users\iqdvi\Documents\reverse\metrics\vr_overlay_native\app\src\main\AndroidManifest.xml:5:22-75
+uses-permission#android.permission.FOREGROUND_SERVICE
+ADDED from C:\Users\iqdvi\Documents\reverse\metrics\vr_overlay_native\app\src\main\AndroidManifest.xml:6:5-77
+	android:name
+		ADDED from C:\Users\iqdvi\Documents\reverse\metrics\vr_overlay_native\app\src\main\AndroidManifest.xml:6:22-74
+uses-permission#android.permission.FOREGROUND_SERVICE_OVERLAY
+ADDED from C:\Users\iqdvi\Documents\reverse\metrics\vr_overlay_native\app\src\main\AndroidManifest.xml:7:5-85
+	android:name
+		ADDED from C:\Users\iqdvi\Documents\reverse\metrics\vr_overlay_native\app\src\main\AndroidManifest.xml:7:22-82
+uses-permission#android.permission.WAKE_LOCK
+ADDED from C:\Users\iqdvi\Documents\reverse\metrics\vr_overlay_native\app\src\main\AndroidManifest.xml:8:5-68
+	android:name
+		ADDED from C:\Users\iqdvi\Documents\reverse\metrics\vr_overlay_native\app\src\main\AndroidManifest.xml:8:22-65
+uses-feature#android.hardware.vr.headtracking
+ADDED from C:\Users\iqdvi\Documents\reverse\metrics\vr_overlay_native\app\src\main\AndroidManifest.xml:10:5-13:31
+	android:version
+		ADDED from C:\Users\iqdvi\Documents\reverse\metrics\vr_overlay_native\app\src\main\AndroidManifest.xml:13:9-28
+	android:required
+		ADDED from C:\Users\iqdvi\Documents\reverse\metrics\vr_overlay_native\app\src\main\AndroidManifest.xml:12:9-33
+	android:name
+		ADDED from C:\Users\iqdvi\Documents\reverse\metrics\vr_overlay_native\app\src\main\AndroidManifest.xml:11:9-56
+application
+ADDED from C:\Users\iqdvi\Documents\reverse\metrics\vr_overlay_native\app\src\main\AndroidManifest.xml:15:5-53:19
+INJECTED from C:\Users\iqdvi\Documents\reverse\metrics\vr_overlay_native\app\src\main\AndroidManifest.xml:15:5-53:19
+MERGED from [com.google.android.material:material:1.9.0] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\7b07f887f389cbdfa83f4456d3df109c\transformed\material-1.9.0\AndroidManifest.xml:24:5-20
+MERGED from [com.google.android.material:material:1.9.0] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\7b07f887f389cbdfa83f4456d3df109c\transformed\material-1.9.0\AndroidManifest.xml:24:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\b1504ec4969f6bfd04b35d75f6c3b6d5\transformed\constraintlayout-2.0.1\AndroidManifest.xml:9:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\b1504ec4969f6bfd04b35d75f6c3b6d5\transformed\constraintlayout-2.0.1\AndroidManifest.xml:9:5-20
+MERGED from [androidx.emoji2:emoji2:1.2.0] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\9ba3f3f78bc75eb84e4e9a4984d4641c\transformed\emoji2-1.2.0\AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.emoji2:emoji2:1.2.0] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\9ba3f3f78bc75eb84e4e9a4984d4641c\transformed\emoji2-1.2.0\AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.core:core:1.9.0] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\7241f257c8a6819728a3f1dfe976f7ce\transformed\core-1.9.0\AndroidManifest.xml:28:5-89
+MERGED from [androidx.core:core:1.9.0] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\7241f257c8a6819728a3f1dfe976f7ce\transformed\core-1.9.0\AndroidManifest.xml:28:5-89
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\c10ac40773446cf1dfb21c8c61c7c71b\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:25:5-35:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\c10ac40773446cf1dfb21c8c61c7c71b\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:25:5-35:19
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\deec094d872983af5af5716f65fe8974\transformed\startup-runtime-1.1.1\AndroidManifest.xml:25:5-31:19
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\deec094d872983af5af5716f65fe8974\transformed\startup-runtime-1.1.1\AndroidManifest.xml:25:5-31:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\933678d58fd489db33712c3b10fcebd6\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\933678d58fd489db33712c3b10fcebd6\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
+	android:extractNativeLibs
+		INJECTED from C:\Users\iqdvi\Documents\reverse\metrics\vr_overlay_native\app\src\main\AndroidManifest.xml
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.9.0] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\7241f257c8a6819728a3f1dfe976f7ce\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
+	android:label
+		ADDED from C:\Users\iqdvi\Documents\reverse\metrics\vr_overlay_native\app\src\main\AndroidManifest.xml:19:9-35
+	android:persistent
+		ADDED from C:\Users\iqdvi\Documents\reverse\metrics\vr_overlay_native\app\src\main\AndroidManifest.xml:20:9-35
+	android:icon
+		ADDED from C:\Users\iqdvi\Documents\reverse\metrics\vr_overlay_native\app\src\main\AndroidManifest.xml:18:9-58
+	android:allowBackup
+		ADDED from C:\Users\iqdvi\Documents\reverse\metrics\vr_overlay_native\app\src\main\AndroidManifest.xml:17:9-36
+	android:theme
+		ADDED from C:\Users\iqdvi\Documents\reverse\metrics\vr_overlay_native\app\src\main\AndroidManifest.xml:21:9-68
+	android:name
+		ADDED from C:\Users\iqdvi\Documents\reverse\metrics\vr_overlay_native\app\src\main\AndroidManifest.xml:16:9-43
+service#com.vroverlay.metrics.OverlayService
+ADDED from C:\Users\iqdvi\Documents\reverse\metrics\vr_overlay_native\app\src\main\AndroidManifest.xml:23:9-31:19
+	android:exported
+		ADDED from C:\Users\iqdvi\Documents\reverse\metrics\vr_overlay_native\app\src\main\AndroidManifest.xml:25:13-36
+	android:foregroundServiceType
+		ADDED from C:\Users\iqdvi\Documents\reverse\metrics\vr_overlay_native\app\src\main\AndroidManifest.xml:26:13-55
+	android:name
+		ADDED from C:\Users\iqdvi\Documents\reverse\metrics\vr_overlay_native\app\src\main\AndroidManifest.xml:24:13-43
+intent-filter#action:name:com.vroverlay.metrics.OverlayService
+ADDED from C:\Users\iqdvi\Documents\reverse\metrics\vr_overlay_native\app\src\main\AndroidManifest.xml:28:13-30:29
+action#com.vroverlay.metrics.OverlayService
+ADDED from C:\Users\iqdvi\Documents\reverse\metrics\vr_overlay_native\app\src\main\AndroidManifest.xml:29:17-79
+	android:name
+		ADDED from C:\Users\iqdvi\Documents\reverse\metrics\vr_overlay_native\app\src\main\AndroidManifest.xml:29:25-76
+activity#com.vroverlay.metrics.SettingsActivity
+ADDED from C:\Users\iqdvi\Documents\reverse\metrics\vr_overlay_native\app\src\main\AndroidManifest.xml:33:9-44:20
+	android:excludeFromRecents
+		ADDED from C:\Users\iqdvi\Documents\reverse\metrics\vr_overlay_native\app\src\main\AndroidManifest.xml:36:13-46
+	android:launchMode
+		ADDED from C:\Users\iqdvi\Documents\reverse\metrics\vr_overlay_native\app\src\main\AndroidManifest.xml:37:13-44
+	android:exported
+		ADDED from C:\Users\iqdvi\Documents\reverse\metrics\vr_overlay_native\app\src\main\AndroidManifest.xml:35:13-36
+	android:theme
+		ADDED from C:\Users\iqdvi\Documents\reverse\metrics\vr_overlay_native\app\src\main\AndroidManifest.xml:38:13-72
+	android:name
+		ADDED from C:\Users\iqdvi\Documents\reverse\metrics\vr_overlay_native\app\src\main\AndroidManifest.xml:34:13-45
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from C:\Users\iqdvi\Documents\reverse\metrics\vr_overlay_native\app\src\main\AndroidManifest.xml:40:13-43:29
+action#android.intent.action.MAIN
+ADDED from C:\Users\iqdvi\Documents\reverse\metrics\vr_overlay_native\app\src\main\AndroidManifest.xml:41:17-69
+	android:name
+		ADDED from C:\Users\iqdvi\Documents\reverse\metrics\vr_overlay_native\app\src\main\AndroidManifest.xml:41:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\iqdvi\Documents\reverse\metrics\vr_overlay_native\app\src\main\AndroidManifest.xml:42:17-77
+	android:name
+		ADDED from C:\Users\iqdvi\Documents\reverse\metrics\vr_overlay_native\app\src\main\AndroidManifest.xml:42:27-74
+provider#com.vroverlay.metrics.OverlaySettingsProvider
+ADDED from C:\Users\iqdvi\Documents\reverse\metrics\vr_overlay_native\app\src\main\AndroidManifest.xml:46:9-51:77
+	android:enabled
+		ADDED from C:\Users\iqdvi\Documents\reverse\metrics\vr_overlay_native\app\src\main\AndroidManifest.xml:48:13-35
+	android:authorities
+		ADDED from C:\Users\iqdvi\Documents\reverse\metrics\vr_overlay_native\app\src\main\AndroidManifest.xml:50:13-65
+	android:exported
+		ADDED from C:\Users\iqdvi\Documents\reverse\metrics\vr_overlay_native\app\src\main\AndroidManifest.xml:49:13-36
+	android:permission
+		ADDED from C:\Users\iqdvi\Documents\reverse\metrics\vr_overlay_native\app\src\main\AndroidManifest.xml:51:13-74
+	android:name
+		ADDED from C:\Users\iqdvi\Documents\reverse\metrics\vr_overlay_native\app\src\main\AndroidManifest.xml:47:13-52
+uses-sdk
+INJECTED from C:\Users\iqdvi\Documents\reverse\metrics\vr_overlay_native\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\iqdvi\Documents\reverse\metrics\vr_overlay_native\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\iqdvi\Documents\reverse\metrics\vr_overlay_native\app\src\main\AndroidManifest.xml
+MERGED from [com.google.android.material:material:1.9.0] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\7b07f887f389cbdfa83f4456d3df109c\transformed\material-1.9.0\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.material:material:1.9.0] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\7b07f887f389cbdfa83f4456d3df109c\transformed\material-1.9.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.6.1] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\0d6ecc6b77f5d9f976d3a16c2abb7996\transformed\appcompat-resources-1.6.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat-resources:1.6.1] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\0d6ecc6b77f5d9f976d3a16c2abb7996\transformed\appcompat-resources-1.6.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\b1504ec4969f6bfd04b35d75f6c3b6d5\transformed\constraintlayout-2.0.1\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\b1504ec4969f6bfd04b35d75f6c3b6d5\transformed\constraintlayout-2.0.1\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.appcompat:appcompat:1.6.1] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\ca40241efded7819587679b12e0a2814\transformed\appcompat-1.6.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.6.1] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\ca40241efded7819587679b12e0a2814\transformed\appcompat-1.6.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\2ed1198d86e6967884b61a1691e47ae9\transformed\viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\2ed1198d86e6967884b61a1691e47ae9\transformed\viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.3.6] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\2ac03ae0ef3b8fd1a48a11f05772b75c\transformed\fragment-1.3.6\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.3.6] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\2ac03ae0ef3b8fd1a48a11f05772b75c\transformed\fragment-1.3.6\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.6.0] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\3880bcd587b7ac26211c028b45d75a2b\transformed\activity-1.6.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.6.0] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\3880bcd587b7ac26211c028b45d75a2b\transformed\activity-1.6.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.5.1] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\ef13823e750f19d6a4cce5dce0d2d8a1\transformed\lifecycle-viewmodel-savedstate-2.5.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.5.1] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\ef13823e750f19d6a4cce5dce0d2d8a1\transformed\lifecycle-viewmodel-savedstate-2.5.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\28395283fa0865766b4f7e1b2569f574\transformed\dynamicanimation-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\28395283fa0865766b4f7e1b2569f574\transformed\dynamicanimation-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\8bb742803a8df13cbdb103c193e6c57c\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\8bb742803a8df13cbdb103c193e6c57c\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\96ec6b53b5608d5421bb29f6657ae20a\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\96ec6b53b5608d5421bb29f6657ae20a\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.5.1] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\3b6074d96bcf1167b97a4cb46b88f301\transformed\lifecycle-viewmodel-2.5.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.5.1] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\3b6074d96bcf1167b97a4cb46b88f301\transformed\lifecycle-viewmodel-2.5.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.2.0] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\efc3cc803704d4e37e50c6efd96ea5e9\transformed\savedstate-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.2.0] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\efc3cc803704d4e37e50c6efd96ea5e9\transformed\savedstate-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\3d3caaeaf3f5669ca5f012fa82be14dc\transformed\emoji2-views-helper-1.2.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\3d3caaeaf3f5669ca5f012fa82be14dc\transformed\emoji2-views-helper-1.2.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.emoji2:emoji2:1.2.0] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\9ba3f3f78bc75eb84e4e9a4984d4641c\transformed\emoji2-1.2.0\AndroidManifest.xml:21:5-44
+MERGED from [androidx.emoji2:emoji2:1.2.0] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\9ba3f3f78bc75eb84e4e9a4984d4641c\transformed\emoji2-1.2.0\AndroidManifest.xml:21:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\a2b125d1b208d44031774bca0c22821b\transformed\drawerlayout-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\a2b125d1b208d44031774bca0c22821b\transformed\drawerlayout-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\7007c76d672fabad510b2bd8a944d9c9\transformed\coordinatorlayout-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\7007c76d672fabad510b2bd8a944d9c9\transformed\coordinatorlayout-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.2.0] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\3f6438153ce54d00f27cf304067563e2\transformed\transition-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.2.0] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\3f6438153ce54d00f27cf304067563e2\transformed\transition-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\351180ca8cd2041cccbd54b867ed40e0\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\351180ca8cd2041cccbd54b867ed40e0\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\76d3e78fe792cabc29de374a8bb50692\transformed\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\76d3e78fe792cabc29de374a8bb50692\transformed\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core-ktx:1.9.0] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\5c41e28d2bc81f3f3d9ff3b9821fff32\transformed\core-ktx-1.9.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.core:core-ktx:1.9.0] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\5c41e28d2bc81f3f3d9ff3b9821fff32\transformed\core-ktx-1.9.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\b6ff1ddd5ca347298384c4210c7cb2de\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\b6ff1ddd5ca347298384c4210c7cb2de\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\fb2c611f2a4ef0ea60b8554e1eb678b9\transformed\recyclerview-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\fb2c611f2a4ef0ea60b8554e1eb678b9\transformed\recyclerview-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.customview:customview:1.1.0] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\62f6f229b06d518bb513f80e59f3f3ef\transformed\customview-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.customview:customview:1.1.0] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\62f6f229b06d518bb513f80e59f3f3ef\transformed\customview-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.9.0] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\7241f257c8a6819728a3f1dfe976f7ce\transformed\core-1.9.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.9.0] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\7241f257c8a6819728a3f1dfe976f7ce\transformed\core-1.9.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.3.0] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\09a16b3ef418aa88263db6a69e1f1c05\transformed\annotation-experimental-1.3.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.3.0] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\09a16b3ef418aa88263db6a69e1f1c05\transformed\annotation-experimental-1.3.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\341a38283e72f86a2eca368d1fd0f5c9\transformed\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\341a38283e72f86a2eca368d1fd0f5c9\transformed\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\c10ac40773446cf1dfb21c8c61c7c71b\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\c10ac40773446cf1dfb21c8c61c7c71b\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.5.1] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\e32eb057350f6ef8872d29bfa9ec359a\transformed\lifecycle-runtime-2.5.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.5.1] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\e32eb057350f6ef8872d29bfa9ec359a\transformed\lifecycle-runtime-2.5.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\a74102a648068ee8b762fbde87c7ae0b\transformed\cardview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\a74102a648068ee8b762fbde87c7ae0b\transformed\cardview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\deec094d872983af5af5716f65fe8974\transformed\startup-runtime-1.1.1\AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\deec094d872983af5af5716f65fe8974\transformed\startup-runtime-1.1.1\AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\acef31aa65e4a83fd54b9d6a90c6625e\transformed\tracing-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\acef31aa65e4a83fd54b9d6a90c6625e\transformed\tracing-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\933678d58fd489db33712c3b10fcebd6\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\933678d58fd489db33712c3b10fcebd6\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\7197e270694f0dd938265b60f8876c4f\transformed\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\7197e270694f0dd938265b60f8876c4f\transformed\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.5.1] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\bd31c0d5290af6e88e189da4a61c60f6\transformed\lifecycle-livedata-core-2.5.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.5.1] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\bd31c0d5290af6e88e189da4a61c60f6\transformed\lifecycle-livedata-core-2.5.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\f6feb947b0ad01f524b0239464869906\transformed\core-runtime-2.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\f6feb947b0ad01f524b0239464869906\transformed\core-runtime-2.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\80d24e07c55a31343578b39ec68d677f\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\80d24e07c55a31343578b39ec68d677f\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\1cf511694c0816ac6bfef1fd3365f1d4\transformed\documentfile-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\1cf511694c0816ac6bfef1fd3365f1d4\transformed\documentfile-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\6dd9ea9e77263747fa71ec7a0cb147ec\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\6dd9ea9e77263747fa71ec7a0cb147ec\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\1557a81668199d23a848bbba118b8e0c\transformed\print-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\1557a81668199d23a848bbba118b8e0c\transformed\print-1.0.0\AndroidManifest.xml:20:5-44
+	android:targetSdkVersion
+		INJECTED from C:\Users\iqdvi\Documents\reverse\metrics\vr_overlay_native\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Users\iqdvi\Documents\reverse\metrics\vr_overlay_native\app\src\main\AndroidManifest.xml
+provider#androidx.startup.InitializationProvider
+ADDED from [androidx.emoji2:emoji2:1.2.0] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\9ba3f3f78bc75eb84e4e9a4984d4641c\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\c10ac40773446cf1dfb21c8c61c7c71b\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:26:9-34:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\c10ac40773446cf1dfb21c8c61c7c71b\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:26:9-34:20
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\deec094d872983af5af5716f65fe8974\transformed\startup-runtime-1.1.1\AndroidManifest.xml:26:9-30:34
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\deec094d872983af5af5716f65fe8974\transformed\startup-runtime-1.1.1\AndroidManifest.xml:26:9-30:34
+	tools:node
+		ADDED from [androidx.emoji2:emoji2:1.2.0] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\9ba3f3f78bc75eb84e4e9a4984d4641c\transformed\emoji2-1.2.0\AndroidManifest.xml:28:13-31
+	android:authorities
+		ADDED from [androidx.emoji2:emoji2:1.2.0] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\9ba3f3f78bc75eb84e4e9a4984d4641c\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
+	android:exported
+		ADDED from [androidx.emoji2:emoji2:1.2.0] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\9ba3f3f78bc75eb84e4e9a4984d4641c\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
+	android:name
+		ADDED from [androidx.emoji2:emoji2:1.2.0] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\9ba3f3f78bc75eb84e4e9a4984d4641c\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
+meta-data#androidx.emoji2.text.EmojiCompatInitializer
+ADDED from [androidx.emoji2:emoji2:1.2.0] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\9ba3f3f78bc75eb84e4e9a4984d4641c\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from [androidx.emoji2:emoji2:1.2.0] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\9ba3f3f78bc75eb84e4e9a4984d4641c\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
+	android:name
+		ADDED from [androidx.emoji2:emoji2:1.2.0] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\9ba3f3f78bc75eb84e4e9a4984d4641c\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
+permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.9.0] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\7241f257c8a6819728a3f1dfe976f7ce\transformed\core-1.9.0\AndroidManifest.xml:22:5-24:47
+	android:protectionLevel
+		ADDED from [androidx.core:core:1.9.0] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\7241f257c8a6819728a3f1dfe976f7ce\transformed\core-1.9.0\AndroidManifest.xml:24:9-44
+	android:name
+		ADDED from [androidx.core:core:1.9.0] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\7241f257c8a6819728a3f1dfe976f7ce\transformed\core-1.9.0\AndroidManifest.xml:23:9-81
+permission#com.vroverlay.metrics.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.9.0] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\7241f257c8a6819728a3f1dfe976f7ce\transformed\core-1.9.0\AndroidManifest.xml:22:5-24:47
+	android:protectionLevel
+		ADDED from [androidx.core:core:1.9.0] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\7241f257c8a6819728a3f1dfe976f7ce\transformed\core-1.9.0\AndroidManifest.xml:24:9-44
+	android:name
+		ADDED from [androidx.core:core:1.9.0] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\7241f257c8a6819728a3f1dfe976f7ce\transformed\core-1.9.0\AndroidManifest.xml:23:9-81
+uses-permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.9.0] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\7241f257c8a6819728a3f1dfe976f7ce\transformed\core-1.9.0\AndroidManifest.xml:26:5-97
+	android:name
+		ADDED from [androidx.core:core:1.9.0] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\7241f257c8a6819728a3f1dfe976f7ce\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
+uses-permission#com.vroverlay.metrics.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.9.0] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\7241f257c8a6819728a3f1dfe976f7ce\transformed\core-1.9.0\AndroidManifest.xml:26:5-97
+	android:name
+		ADDED from [androidx.core:core:1.9.0] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\7241f257c8a6819728a3f1dfe976f7ce\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
+meta-data#androidx.lifecycle.ProcessLifecycleInitializer
+ADDED from [androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\c10ac40773446cf1dfb21c8c61c7c71b\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
+	android:value
+		ADDED from [androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\c10ac40773446cf1dfb21c8c61c7c71b\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
+	android:name
+		ADDED from [androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\c10ac40773446cf1dfb21c8c61c7c71b\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78

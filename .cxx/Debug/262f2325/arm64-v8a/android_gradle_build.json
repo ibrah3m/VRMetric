@@ -1,0 +1,38 @@
+{
+  "buildFiles": [
+    "C:\\Users\\iqdvi\\Documents\\reverse\\metrics\\vr_overlay_native\\app\\src\\main\\cpp\\CMakeLists.txt"
+  ],
+  "cleanCommandsComponents": [
+    [
+      "C:\\Users\\iqdvi\\AppData\\Local\\Android\\Sdk\\cmake\\3.22.1\\bin\\ninja.exe",
+      "-C",
+      "C:\\Users\\iqdvi\\Documents\\reverse\\metrics\\vr_overlay_native\\app\\.cxx\\Debug\\262f2325\\arm64-v8a",
+      "clean"
+    ]
+  ],
+  "buildTargetsCommandComponents": [
+    "C:\\Users\\iqdvi\\AppData\\Local\\Android\\Sdk\\cmake\\3.22.1\\bin\\ninja.exe",
+    "-C",
+    "C:\\Users\\iqdvi\\Documents\\reverse\\metrics\\vr_overlay_native\\app\\.cxx\\Debug\\262f2325\\arm64-v8a",
+    "{LIST_OF_TARGETS_TO_BUILD}"
+  ],
+  "libraries": {
+    "perfoverlay::@6890427a1f51a3e7e1df": {
+      "toolchain": "toolchain",
+      "abi": "arm64-v8a",
+      "artifactName": "perfoverlay",
+      "output": "C:\\Users\\iqdvi\\Documents\\reverse\\metrics\\vr_overlay_native\\app\\build\\intermediates\\cxx\\Debug\\262f2325\\obj\\arm64-v8a\\libperfoverlay.so",
+      "runtimeFiles": []
+    }
+  },
+  "toolchains": {
+    "toolchain": {
+      "cCompilerExecutable": "C:\\Users\\iqdvi\\AppData\\Local\\Android\\Sdk\\ndk\\23.1.7779620\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang.exe",
+      "cppCompilerExecutable": "C:\\Users\\iqdvi\\AppData\\Local\\Android\\Sdk\\ndk\\23.1.7779620\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe"
+    }
+  },
+  "cFileExtensions": [],
+  "cppFileExtensions": [
+    "cpp"
+  ]
+}

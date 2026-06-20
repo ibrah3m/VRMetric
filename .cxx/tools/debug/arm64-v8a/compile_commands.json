@@ -1,0 +1,7 @@
+[
+{
+  "directory": "C:/Users/iqdvi/Documents/reverse/metrics/vr_overlay_native/app/.cxx/Debug/262f2325/arm64-v8a",
+  "command": "C:\\Users\\iqdvi\\AppData\\Local\\Android\\Sdk\\ndk\\23.1.7779620\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe --target=aarch64-none-linux-android31 --sysroot=C:/Users/iqdvi/AppData/Local/Android/Sdk/ndk/23.1.7779620/toolchains/llvm/prebuilt/windows-x86_64/sysroot -D_USE_MATH_DEFINES -Dperfoverlay_EXPORTS -std=c++11 -g  -fno-limit-debug-info -fPIC -o CMakeFiles\\perfoverlay.dir\\perf_overlay.cpp.o -c C:\\Users\\iqdvi\\Documents\\reverse\\metrics\\vr_overlay_native\\app\\src\\main\\cpp\\perf_overlay.cpp",
+  "file": "C:\\Users\\iqdvi\\Documents\\reverse\\metrics\\vr_overlay_native\\app\\src\\main\\cpp\\perf_overlay.cpp"
+}
+]
