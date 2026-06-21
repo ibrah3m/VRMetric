@@ -50,17 +50,17 @@
 29-->C:\Users\iqdvi\Documents\reverse\metrics\vr_overlay_native\app\src\main\AndroidManifest.xml:20:9-68
 30        <service
 30-->C:\Users\iqdvi\Documents\reverse\metrics\vr_overlay_native\app\src\main\AndroidManifest.xml:22:9-30:19
-31            android:name="com.vroverlay.metrics.OverlayServiceWeb"
-31-->C:\Users\iqdvi\Documents\reverse\metrics\vr_overlay_native\app\src\main\AndroidManifest.xml:23:13-46
+31            android:name="com.vroverlay.metrics.OverlayService"
+31-->C:\Users\iqdvi\Documents\reverse\metrics\vr_overlay_native\app\src\main\AndroidManifest.xml:23:13-43
 32            android:exported="true"
 32-->C:\Users\iqdvi\Documents\reverse\metrics\vr_overlay_native\app\src\main\AndroidManifest.xml:24:13-36
 33            android:foregroundServiceType="specialUse" >
 33-->C:\Users\iqdvi\Documents\reverse\metrics\vr_overlay_native\app\src\main\AndroidManifest.xml:25:13-55
 34            <intent-filter>
 34-->C:\Users\iqdvi\Documents\reverse\metrics\vr_overlay_native\app\src\main\AndroidManifest.xml:27:13-29:29
-35                <action android:name="com.vroverlay.metrics.OverlayServiceWeb" />
-35-->C:\Users\iqdvi\Documents\reverse\metrics\vr_overlay_native\app\src\main\AndroidManifest.xml:28:17-82
-35-->C:\Users\iqdvi\Documents\reverse\metrics\vr_overlay_native\app\src\main\AndroidManifest.xml:28:25-79
+35                <action android:name="com.vroverlay.metrics.OverlayService" />
+35-->C:\Users\iqdvi\Documents\reverse\metrics\vr_overlay_native\app\src\main\AndroidManifest.xml:28:17-79
+35-->C:\Users\iqdvi\Documents\reverse\metrics\vr_overlay_native\app\src\main\AndroidManifest.xml:28:25-76
 36            </intent-filter>
 37        </service>
 38

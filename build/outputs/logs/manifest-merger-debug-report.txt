@@ -50,20 +50,20 @@ INJECTED from C:\Users\iqdvi\Documents\reverse\metrics\vr_overlay_native\app\src
 		ADDED from C:\Users\iqdvi\Documents\reverse\metrics\vr_overlay_native\app\src\main\AndroidManifest.xml:20:9-68
 	android:name
 		ADDED from C:\Users\iqdvi\Documents\reverse\metrics\vr_overlay_native\app\src\main\AndroidManifest.xml:15:9-43
-service#com.vroverlay.metrics.OverlayServiceWeb
+service#com.vroverlay.metrics.OverlayService
 ADDED from C:\Users\iqdvi\Documents\reverse\metrics\vr_overlay_native\app\src\main\AndroidManifest.xml:22:9-30:19
 	android:exported
 		ADDED from C:\Users\iqdvi\Documents\reverse\metrics\vr_overlay_native\app\src\main\AndroidManifest.xml:24:13-36
 	android:foregroundServiceType
 		ADDED from C:\Users\iqdvi\Documents\reverse\metrics\vr_overlay_native\app\src\main\AndroidManifest.xml:25:13-55
 	android:name
-		ADDED from C:\Users\iqdvi\Documents\reverse\metrics\vr_overlay_native\app\src\main\AndroidManifest.xml:23:13-46
-intent-filter#action:name:com.vroverlay.metrics.OverlayServiceWeb
+		ADDED from C:\Users\iqdvi\Documents\reverse\metrics\vr_overlay_native\app\src\main\AndroidManifest.xml:23:13-43
+intent-filter#action:name:com.vroverlay.metrics.OverlayService
 ADDED from C:\Users\iqdvi\Documents\reverse\metrics\vr_overlay_native\app\src\main\AndroidManifest.xml:27:13-29:29
-action#com.vroverlay.metrics.OverlayServiceWeb
-ADDED from C:\Users\iqdvi\Documents\reverse\metrics\vr_overlay_native\app\src\main\AndroidManifest.xml:28:17-82
+action#com.vroverlay.metrics.OverlayService
+ADDED from C:\Users\iqdvi\Documents\reverse\metrics\vr_overlay_native\app\src\main\AndroidManifest.xml:28:17-79
 	android:name
-		ADDED from C:\Users\iqdvi\Documents\reverse\metrics\vr_overlay_native\app\src\main\AndroidManifest.xml:28:25-79
+		ADDED from C:\Users\iqdvi\Documents\reverse\metrics\vr_overlay_native\app\src\main\AndroidManifest.xml:28:25-76
 activity#com.vroverlay.metrics.SettingsActivity
 ADDED from C:\Users\iqdvi\Documents\reverse\metrics\vr_overlay_native\app\src\main\AndroidManifest.xml:32:9-43:20
 	android:excludeFromRecents
