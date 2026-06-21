@@ -20,12 +20,12 @@
         android:theme="@android:style/Theme.Translucent.NoTitleBar">
         
         <service
-            android:name=".OverlayServiceWeb"
+            android:name=".OverlayService"
             android:exported="true"
             android:foregroundServiceType="specialUse">
             
             <intent-filter>
-                <action android:name="com.vroverlay.metrics.OverlayServiceWeb" />
+                <action android:name="com.vroverlay.metrics.OverlayService" />
             </intent-filter>
         </service>
         

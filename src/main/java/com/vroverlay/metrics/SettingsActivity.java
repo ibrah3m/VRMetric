@@ -8,7 +8,6 @@ import android.provider.Settings;
 import android.util.Log;
 import android.view.Gravity;
 import android.widget.LinearLayout;
-import android.widget.Switch;
 import android.widget.TextView;
 
 public class SettingsActivity extends Activity {
@@ -45,15 +44,15 @@ public class SettingsActivity extends Activity {
 
     private void startOverlayService() {
         try {
-            Intent serviceIntent = new Intent(this, OverlayServiceWeb.class);
+            Intent serviceIntent = new Intent(this, OverlayService.class);
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
                 startForegroundService(serviceIntent);
             } else {
                 startService(serviceIntent);
             }
-            Log.i(TAG, "OverlayServiceWeb started from SettingsActivity");
+            Log.i(TAG, "OverlayService started from SettingsActivity");
         } catch (Exception e) {
-            Log.e(TAG, "Failed to start OverlayServiceWeb", e);
+            Log.e(TAG, "Failed to start OverlayService", e);
         }
     }
 }
