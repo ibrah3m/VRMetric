@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.vroverlay.metrics">
-    
-    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
-    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_OVERLAY" />
-    
-    <uses-feature 
-        android:name="android.hardware.vr.headtracking" 
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_SPECIAL_USE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="com.oculus.vr.permission.DISPLAY_OVERLAY" />
+
+    <uses-feature
+        android:name="android.hardware.vr.headtracking"
         android:required="false"
         android:version="1" />
-    
+
     <application
         android:name=".OverlayApplication"
         android:allowBackup="false"
@@ -18,36 +19,58 @@
         android:label="VR Overlay"
         android:persistent="false"
         android:theme="@android:style/Theme.Translucent.NoTitleBar">
-        
+
         <service
             android:name=".OverlayService"
             android:exported="true"
             android:foregroundServiceType="specialUse">
-            
+
+            <property
+                android:name="android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE"
+                android:value="vr_overlay" />
+
             <intent-filter>
                 <action android:name="com.vroverlay.metrics.OverlayService" />
             </intent-filter>
         </service>
-        
+
         <activity
             android:name=".SettingsActivity"
             android:exported="true"
             android:excludeFromRecents="true"
             android:launchMode="singleTask"
             android:theme="@android:style/Theme.Translucent.NoTitleBar">
-            
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        
+
         <provider
             android:name=".OverlaySettingsProvider"
             android:enabled="true"
             android:exported="true"
             android:authorities="com.vroverlay.metrics.provider"
             android:permission="android.permission.WRITE_SECURE_SETTINGS" />
-            
+
+        <receiver
+            android:name=".overlay.UserBackgroundReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.oculus.vr.ACTION_USER_BACKGROUND" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name=".overlay.VRShellSettingsReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.oculus.vr.ACTION_SHELL_SETTINGS_CHANGED" />
+            </intent-filter>
+        </receiver>
+
     </application>
 </manifest>

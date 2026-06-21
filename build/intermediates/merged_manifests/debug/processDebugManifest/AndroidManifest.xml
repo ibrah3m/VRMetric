@@ -6,20 +6,28 @@
 
     <uses-sdk
         android:minSdkVersion="31"
-        android:targetSdkVersion="34" />
+        android:targetSdkVersion="35" />
 
-    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
-    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_OVERLAY" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_SPECIAL_USE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="com.oculus.vr.permission.DISPLAY_OVERLAY" />
 
     <uses-feature
         android:name="android.hardware.vr.headtracking"
         android:required="false"
         android:version="1" />
 
+    <permission
+        android:name="com.vroverlay.metrics.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.vroverlay.metrics.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+
     <application
         android:name="com.vroverlay.metrics.OverlayApplication"
         android:allowBackup="false"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
         android:debuggable="true"
         android:extractNativeLibs="false"
         android:icon="@android:drawable/sym_def_app_icon"
@@ -31,6 +39,10 @@
             android:name="com.vroverlay.metrics.OverlayService"
             android:exported="true"
             android:foregroundServiceType="specialUse" >
+            <property
+                android:name="android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE"
+                android:value="vr_overlay" />
+
             <intent-filter>
                 <action android:name="com.vroverlay.metrics.OverlayService" />
             </intent-filter>
@@ -55,6 +67,35 @@
             android:enabled="true"
             android:exported="true"
             android:permission="android.permission.WRITE_SECURE_SETTINGS" />
+
+        <receiver
+            android:name="com.vroverlay.metrics.overlay.UserBackgroundReceiver"
+            android:enabled="true"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="com.oculus.vr.ACTION_USER_BACKGROUND" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.vroverlay.metrics.overlay.VRShellSettingsReceiver"
+            android:enabled="true"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="com.oculus.vr.ACTION_SHELL_SETTINGS_CHANGED" />
+            </intent-filter>
+        </receiver>
+
+        <provider
+            android:name="androidx.startup.InitializationProvider"
+            android:authorities="com.vroverlay.metrics.androidx-startup"
+            android:exported="false" >
+            <meta-data
+                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+                android:value="androidx.startup" />
+            <meta-data
+                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+                android:value="androidx.startup" />
+        </provider>
     </application>
 
 </manifest>
