@@ -1,5 +1,9 @@
 package com.vroverlay.metrics.rendering;
 
+import com.oculus.ovrmonitormetricsservice.rendering.NativeOverlayRenderer;
+import com.oculus.ovrmonitormetricsservice.rendering.NativeRenderer;
+import com.oculus.ovrmonitormetricsservice.rendering.OverlayRenderer;
+
 public class OverlayRenderingManager {
     private static final Object _mutex = new Object();
     private static OverlayRenderer _renderer;

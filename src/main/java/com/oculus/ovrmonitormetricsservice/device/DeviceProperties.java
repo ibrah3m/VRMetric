@@ -7,6 +7,7 @@ import com.oculus.ovrmonitormetricsservice.log.Log;
 import java.lang.reflect.Method;
 
 public class DeviceProperties {
+    public static native void getDeviceProperties();
     public static final int DEVICE_RECOMMENDED_EYEBUFFER_HEIGHT = 1464;
     public static final int DEVICE_RECOMMENDED_EYEBUFFER_WIDTH = 1832;
     public static final int DEVICE_SCREEN_HEIGHT = 1920;

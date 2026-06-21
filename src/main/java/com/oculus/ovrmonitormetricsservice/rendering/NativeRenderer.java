@@ -1,26 +1,24 @@
-package com.vroverlay.metrics.rendering;
+package com.oculus.ovrmonitormetricsservice.rendering;
 
 import android.content.Context;
 import android.graphics.Point;
 import android.util.Log;
 import com.oculus.ovrmonitormetricsservice.PerfDebugOverlay;
+import com.vroverlay.metrics.OverlayApplication;
+import com.vroverlay.metrics.sdk.CrashGuard;
 import com.vroverlay.metrics.sdk.SimpleSettingsConfig;
 
 public class NativeRenderer implements NativeOverlayRenderer {
     private static final String TAG = "NativeRenderer";
     private static final Object _mutex = new Object();
-    private static final long FRAME_INTERVAL_MS = 33; // ~30fps target
-
-    private NativeThread mNativeThread;
+    private static final long FRAME_INTERVAL_MS = 33;
+    private volatile NativeThread mNativeThread;
+    private volatile boolean mInitInProgress = false;
 
     private static native void destroy();
-
-    private static native void init(Context context, int textureWidth, int textureHeight, int backend);
-
+    private static native boolean init(Context context, int textureWidth, int textureHeight, int backend);
     private static native void nativeSetOverlayFrameRateHint(short frameRate);
-
     private static native void update(float pitch, float yaw, float scale, float distance, boolean headLocked, boolean captureAllowed);
-
     private static native void updateTexture(int[] texture, int textureWidth, int textureHeight, int displayedWidth, int displayedHeight, int textureUpdateCount);
 
     static {
@@ -28,59 +26,45 @@ public class NativeRenderer implements NativeOverlayRenderer {
     }
 
     private boolean canShowOverlay(SimpleSettingsConfig settings) {
-        if (settings == null) {
-            Log.e(TAG, "Settings config is null, cannot show overlay");
-            return false;
-        }
-        if (!settings.isOverlayEnabled()) {
-            Log.w(TAG, "Overlay is disabled in settings");
+        if (settings == null || !settings.isOverlayEnabled()) {
             return false;
         }
         Point dims = settings.getPerfDebugOverlay().GetTextureDimensions();
-        Log.i(TAG, "Overlay dimensions: " + dims.x + "x" + dims.y);
         return (dims.x != 0 && dims.y != 0);
     }
 
     @Override
     public boolean isOverlayVisible() {
-        boolean z;
         synchronized (_mutex) {
-            z = this.mNativeThread != null && this.mNativeThread.isRunning();
+            return mNativeThread != null && mNativeThread.isRunning();
         }
-        return z;
     }
 
     public void showOverlay(SimpleSettingsConfig settings) {
         synchronized (_mutex) {
-            if (settings == null) {
-                Log.e(TAG, "Cannot show overlay: settings config is null");
-                return;
-            }
-            if (!canShowOverlay(settings)) {
+            if (settings == null || !canShowOverlay(settings)) {
                 hideOverlay();
-            } else {
-                if (isOverlayVisible()) {
-                    return;
-                }
+            } else if (!isOverlayVisible() && !mInitInProgress) {
                 Log.i(TAG, "Starting NativeRenderer thread");
-                this.mNativeThread = new NativeThread(this.mNativeThread, settings);
-                this.mNativeThread.start();
+                mInitInProgress = true;
+                mNativeThread = new NativeThread(mNativeThread, settings);
+                mNativeThread.start();
             }
         }
     }
 
     @Override
     public void showOverlay() {
-        Log.w(TAG, "showOverlay() called without settings config - overlay will not start");
-        showOverlay(null);
+        SimpleSettingsConfig settings = OverlayApplication.settingsConfig;
+        showOverlay(settings);
     }
 
     @Override
     public void hideOverlay() {
         synchronized (_mutex) {
-            if (this.mNativeThread != null && this.mNativeThread.isRunning()) {
+            if (mNativeThread != null && mNativeThread.isRunning()) {
                 Log.i(TAG, "Shutting down NativeRenderer thread");
-                this.mNativeThread.shutdown();
+                mNativeThread.shutdown();
             }
         }
     }
@@ -93,12 +77,13 @@ public class NativeRenderer implements NativeOverlayRenderer {
     private class NativeThread extends Thread implements PerfDebugOverlay.TextureReceiver {
         private NativeThread mPreviousNativeThread;
         private volatile boolean mShutdownRequested = false;
+        private volatile boolean mInitialized = false;
         private SimpleSettingsConfig mSettings;
         private int mFrameCount = 0;
 
-        public NativeThread(NativeThread previousNativeThread, SimpleSettingsConfig settings) {
-            this.mPreviousNativeThread = previousNativeThread;
-            this.mSettings = settings;
+        NativeThread(NativeThread previousNativeThread, SimpleSettingsConfig settings) {
+            mPreviousNativeThread = previousNativeThread;
+            mSettings = settings;
         }
 
         @Override
@@ -108,32 +93,51 @@ public class NativeRenderer implements NativeOverlayRenderer {
 
         @Override
         public void run() {
-            if (this.mPreviousNativeThread != null) {
-                try {
-                    this.mPreviousNativeThread.join();
-                } catch (InterruptedException e) {
-                }
-                this.mPreviousNativeThread = null;
+            if (mPreviousNativeThread != null) {
+                try { mPreviousNativeThread.join(); } catch (InterruptedException e) { }
+                mPreviousNativeThread = null;
             }
             setName("OverlayRender");
 
             if (mSettings == null) {
-                Log.e(TAG, "No settings provided, cannot start native renderer");
+                Log.e(TAG, "No settings provided");
+                synchronized (_mutex) { mInitInProgress = false; }
                 return;
             }
 
-            NativeOverlayRenderer.Backend nativeBackend = mSettings.getPreferredNativeRendererBackend();
+            Backend nativeBackend = mSettings.getPreferredNativeRendererBackend();
             Log.i(TAG, "Initializing native renderer with backend: " + nativeBackend.name());
-            NativeRenderer.init(mSettings.getContext(), PerfDebugOverlay.TextureWidth, PerfDebugOverlay.TextureHeight, nativeBackend.ordinal());
+
+            CrashGuard crashGuard = CrashGuard.getInstance(mSettings.getContext());
+
+            if (!crashGuard.shouldAttemptInit()) {
+                Log.e(TAG, "CrashGuard blocked native init after " + crashGuard.getCrashCount() + " crashes. Aborting render thread.");
+                synchronized (_mutex) { mInitInProgress = false; }
+                return;
+            }
+
+            crashGuard.markInitStarting();
+            boolean initOk = init(mSettings.getContext(), PerfDebugOverlay.TextureWidth, PerfDebugOverlay.TextureHeight, nativeBackend.ordinal());
+
+            if (!initOk) {
+                crashGuard.markInitFailedGracefully();
+                Log.e(TAG, "Native renderer init failed — vrapi_Initialize likely failed. Aborting render thread.");
+                synchronized (_mutex) { mInitInProgress = false; }
+                return;
+            }
+
+            crashGuard.markInitSucceeded();
+
+            mInitialized = true;
 
             Log.i(TAG, "Entering render loop");
-            while (!this.mShutdownRequested) {
+            while (!mShutdownRequested) {
                 long frameStart = System.currentTimeMillis();
 
                 PerfDebugOverlay perfDebugOverlay = mSettings.getPerfDebugOverlay();
                 if (perfDebugOverlay != null) {
                     perfDebugOverlay.UpdateTexture(this);
-                    NativeRenderer.update(
+                    update(
                         mSettings.getOverlayPitch(),
                         mSettings.getOverlayYaw(),
                         mSettings.getOverlayScale(),
@@ -146,31 +150,25 @@ public class NativeRenderer implements NativeOverlayRenderer {
                     if (mFrameCount % 100 == 0) {
                         Log.d(TAG, "Rendered " + mFrameCount + " frames");
                     }
-                } else {
-                    Log.w(TAG, "PerfDebugOverlay is null in render loop");
                 }
 
-                long frameDuration = System.currentTimeMillis() - frameStart;
-                long sleepTime = FRAME_INTERVAL_MS - frameDuration;
+                long sleepTime = FRAME_INTERVAL_MS - (System.currentTimeMillis() - frameStart);
                 if (sleepTime > 0) {
-                    try {
-                        Thread.sleep(sleepTime);
-                    } catch (InterruptedException e) {
-                        break;
-                    }
+                    try { Thread.sleep(sleepTime); } catch (InterruptedException e) { break; }
                 }
             }
 
-            NativeRenderer.destroy();
+            destroy();
+            synchronized (_mutex) { mInitInProgress = false; }
             Log.i(TAG, "Native renderer destroyed after " + mFrameCount + " frames");
         }
 
-        public void shutdown() {
-            this.mShutdownRequested = true;
+        void shutdown() {
+            mShutdownRequested = true;
         }
 
-        public boolean isRunning() {
-            return !this.mShutdownRequested;
+        boolean isRunning() {
+            return mInitialized && !mShutdownRequested;
         }
     }
 }

@@ -9,7 +9,8 @@ import android.os.Build;
 import android.os.IBinder;
 import android.util.Log;
 import androidx.core.app.NotificationCompat;
-import com.vroverlay.metrics.rendering.NativeOverlayRenderer;
+import com.oculus.ovrmonitormetricsservice.rendering.NativeOverlayRenderer;
+import com.oculus.ovrmonitormetricsservice.rendering.OverlayRenderer;
 import com.vroverlay.metrics.rendering.OverlayRenderingManager;
 import com.vroverlay.metrics.sdk.SimpleSettingsConfig;
 
@@ -17,9 +18,6 @@ public class OverlayService extends Service {
     private static final String TAG = "OverlayService";
     private static final String CHANNEL_ID = "overlay_channel";
     private static final int NOTIFICATION_ID = 1;
-
-    private volatile boolean isRunning = false;
-    private NativeOverlayRenderer nativeRenderer;
 
     @Override
     public void onCreate() {
@@ -33,8 +31,8 @@ public class OverlayService extends Service {
         Log.i(TAG, "Service started");
 
         Notification notification = new NotificationCompat.Builder(this, CHANNEL_ID)
-            .setContentTitle("VR Overlay")
-            .setContentText("Native overlay rendering active")
+            .setContentTitle(getString(R.string.notification_title))
+            .setContentText(getString(R.string.notification_text))
             .setSmallIcon(android.R.drawable.ic_dialog_info)
             .setOngoing(true)
             .setPriority(NotificationCompat.PRIORITY_LOW)
@@ -42,55 +40,18 @@ public class OverlayService extends Service {
 
         startForeground(NOTIFICATION_ID, notification);
 
-        if (!isRunning) {
-            SimpleSettingsConfig settings = OverlayApplication.settingsConfig;
-            if (settings != null) {
-                startNativeRenderer(settings);
-                Log.i(TAG, "Native overlay renderer started with shared settings");
-            } else {
-                Log.e(TAG, "Shared settings config is null, cannot start renderer");
+        SimpleSettingsConfig settings = OverlayApplication.settingsConfig;
+        if (settings != null && settings.isOverlayEnabled()) {
+            OverlayRenderer renderer = OverlayRenderingManager.get();
+            if (renderer instanceof NativeOverlayRenderer) {
+                ((NativeOverlayRenderer) renderer).showOverlay(settings);
+                Log.i(TAG, "Native overlay renderer started");
             }
-            isRunning = true;
-        }
-        return START_STICKY;
-    }
-
-    private void createNotificationChannel() {
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-            NotificationChannel channel = new NotificationChannel(
-                CHANNEL_ID,
-                "VR Overlay Service",
-                NotificationManager.IMPORTANCE_LOW
-            );
-            channel.setDescription("Native overlay rendering");
-            channel.setSound(null, null);
-            channel.enableVibration(false);
-
-            NotificationManager manager = getSystemService(NotificationManager.class);
-            if (manager != null) {
-                manager.createNotificationChannel(channel);
-            }
-        }
-    }
-
-    private void startNativeRenderer(SimpleSettingsConfig settings) {
-        if (nativeRenderer == null) {
-            nativeRenderer = (NativeOverlayRenderer) OverlayRenderingManager.get();
-        }
-
-        if (nativeRenderer != null && settings != null) {
-            nativeRenderer.showOverlay(settings);
         } else {
-            Log.e(TAG, "Cannot start native renderer: renderer=" + nativeRenderer + ", settings=" + settings);
+            Log.w(TAG, "Overlay disabled or settings null");
         }
-    }
 
-    private void stopNativeRenderer() {
-        if (nativeRenderer != null) {
-            nativeRenderer.hideOverlay();
-            Log.i(TAG, "Native overlay renderer stopped");
-        }
-        OverlayRenderingManager.reset();
+        return START_STICKY;
     }
 
     @Override
@@ -102,7 +63,23 @@ public class OverlayService extends Service {
     public void onDestroy() {
         super.onDestroy();
         Log.i(TAG, "Stopping VR Overlay Service");
-        isRunning = false;
-        stopNativeRenderer();
+        OverlayRenderingManager.get().hideOverlay();
+        OverlayRenderingManager.reset();
+    }
+
+    private void createNotificationChannel() {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            NotificationChannel channel = new NotificationChannel(
+                CHANNEL_ID,
+                getString(R.string.service_name),
+                NotificationManager.IMPORTANCE_LOW
+            );
+            channel.setSound(null, null);
+            channel.enableVibration(false);
+            NotificationManager manager = getSystemService(NotificationManager.class);
+            if (manager != null) {
+                manager.createNotificationChannel(channel);
+            }
+        }
     }
 }

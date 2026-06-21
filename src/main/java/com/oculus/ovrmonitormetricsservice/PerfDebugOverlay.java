@@ -27,6 +27,7 @@ public class PerfDebugOverlay {
     public static final int TextureWidth = 256;
 
     String DebugData;
+    public String getDebugData() { return DebugData; }
     boolean DebugDataEnabled;
     int DebugDataEndOffsetX;
     int DebugDataEndOffsetY;

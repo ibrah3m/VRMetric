@@ -5,7 +5,7 @@ import com.oculus.ovrmonitormetricsservice.PerfDebugOverlay;
 import com.oculus.ovrmonitormetricsservice.device.DeviceProperties;
 import com.oculus.ovrmonitormetricsservice.device.DeviceType;
 import com.oculus.ovrmonitormetricsservice.device.SettingsConfig;
-import com.vroverlay.metrics.rendering.NativeOverlayRenderer;
+import com.oculus.ovrmonitormetricsservice.rendering.NativeOverlayRenderer;
 import com.vroverlay.metrics.settings.UsageSettings;
 
 public class SimpleSettingsConfig extends SettingsConfig {

@@ -70,7 +70,7 @@ public class UsageSettings {
     }
 
     public int getOverlayBackend() {
-        return prefs.getInt(KEY_OVERLAY_BACKEND, 1);
+        return prefs.getInt(KEY_OVERLAY_BACKEND, 0);
     }
 
     public void setOverlayBackend(int backend) {

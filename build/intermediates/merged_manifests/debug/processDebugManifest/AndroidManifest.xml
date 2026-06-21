@@ -11,12 +11,22 @@
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE_SPECIAL_USE" />
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.oculus.permission.REPORT_EVENTS" />
+    <uses-permission android:name="com.oculus.permission.REPORT_EVENTS_DEBUG" />
+    <uses-permission android:name="oculus.render_notification" />
+    <uses-permission android:name="com.oculus.permission.HAND_TRACKING" />
     <uses-permission android:name="com.oculus.vr.permission.DISPLAY_OVERLAY" />
+    <uses-permission android:name="horizonos.permission.RIPC_CAN_REGISTER_SERVER" />
 
+    <uses-feature android:glEsVersion="0x30000" />
     <uses-feature
         android:name="android.hardware.vr.headtracking"
         android:required="false"
         android:version="1" />
+    <uses-feature
+        android:name="oculus.software.handtracking"
+        android:required="false" />
 
     <permission
         android:name="com.vroverlay.metrics.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
@@ -35,6 +45,16 @@
         android:persistent="false"
         android:testOnly="true"
         android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        <meta-data
+            android:name="com.oculus.supportedDevices"
+            android:value="quest2|questpro|quest3|panther" />
+        <meta-data
+            android:name="com.oculus.vr.appcompat.Theme"
+            android:value="android:Theme.Black.NoTitleBar.Fullscreen" />
+        <meta-data
+            android:name="com.oculus.vr.appcompat.EnableBoundaryVisibility"
+            android:value="true" />
+
         <service
             android:name="com.vroverlay.metrics.OverlayService"
             android:exported="true"
@@ -58,15 +78,9 @@
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="com.oculus.intent.category.2D" />
             </intent-filter>
         </activity>
-
-        <provider
-            android:name="com.vroverlay.metrics.OverlaySettingsProvider"
-            android:authorities="com.vroverlay.metrics.provider"
-            android:enabled="true"
-            android:exported="true"
-            android:permission="android.permission.WRITE_SECURE_SETTINGS" />
 
         <receiver
             android:name="com.vroverlay.metrics.overlay.UserBackgroundReceiver"

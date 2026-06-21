@@ -4,7 +4,7 @@ import android.graphics.Point;
 import android.util.Log;
 import androidx.annotation.NonNull;
 import com.oculus.ovrmonitormetricsservice.PerfDebugOverlay;
-import com.vroverlay.metrics.rendering.NativeOverlayRenderer;
+import com.oculus.ovrmonitormetricsservice.rendering.NativeOverlayRenderer;
 
 public class VROverlayManager {
     private static final String TAG = "VROverlayManager";
