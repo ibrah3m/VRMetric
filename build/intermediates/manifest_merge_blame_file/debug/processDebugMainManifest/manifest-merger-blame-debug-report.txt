@@ -20,123 +20,86 @@
 13    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_OVERLAY" />
 13-->C:\Users\iqdvi\Documents\reverse\metrics\vr_overlay_native\app\src\main\AndroidManifest.xml:7:5-85
 13-->C:\Users\iqdvi\Documents\reverse\metrics\vr_overlay_native\app\src\main\AndroidManifest.xml:7:22-82
-14    <uses-permission android:name="android.permission.WAKE_LOCK" />
-14-->C:\Users\iqdvi\Documents\reverse\metrics\vr_overlay_native\app\src\main\AndroidManifest.xml:8:5-68
-14-->C:\Users\iqdvi\Documents\reverse\metrics\vr_overlay_native\app\src\main\AndroidManifest.xml:8:22-65
-15
-16    <uses-feature
-16-->C:\Users\iqdvi\Documents\reverse\metrics\vr_overlay_native\app\src\main\AndroidManifest.xml:10:5-13:31
-17        android:name="android.hardware.vr.headtracking"
-17-->C:\Users\iqdvi\Documents\reverse\metrics\vr_overlay_native\app\src\main\AndroidManifest.xml:11:9-56
-18        android:required="false"
-18-->C:\Users\iqdvi\Documents\reverse\metrics\vr_overlay_native\app\src\main\AndroidManifest.xml:12:9-33
-19        android:version="1" />
-19-->C:\Users\iqdvi\Documents\reverse\metrics\vr_overlay_native\app\src\main\AndroidManifest.xml:13:9-28
-20
-21    <permission
-21-->[androidx.core:core:1.9.0] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\7241f257c8a6819728a3f1dfe976f7ce\transformed\core-1.9.0\AndroidManifest.xml:22:5-24:47
-22        android:name="com.vroverlay.metrics.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
-22-->[androidx.core:core:1.9.0] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\7241f257c8a6819728a3f1dfe976f7ce\transformed\core-1.9.0\AndroidManifest.xml:23:9-81
-23        android:protectionLevel="signature" />
-23-->[androidx.core:core:1.9.0] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\7241f257c8a6819728a3f1dfe976f7ce\transformed\core-1.9.0\AndroidManifest.xml:24:9-44
-24
-25    <uses-permission android:name="com.vroverlay.metrics.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
-25-->[androidx.core:core:1.9.0] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\7241f257c8a6819728a3f1dfe976f7ce\transformed\core-1.9.0\AndroidManifest.xml:26:5-97
-25-->[androidx.core:core:1.9.0] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\7241f257c8a6819728a3f1dfe976f7ce\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
-26
-27    <application
-27-->C:\Users\iqdvi\Documents\reverse\metrics\vr_overlay_native\app\src\main\AndroidManifest.xml:15:5-53:19
-28        android:name="com.vroverlay.metrics.OverlayApplication"
-28-->C:\Users\iqdvi\Documents\reverse\metrics\vr_overlay_native\app\src\main\AndroidManifest.xml:16:9-43
-29        android:allowBackup="false"
-29-->C:\Users\iqdvi\Documents\reverse\metrics\vr_overlay_native\app\src\main\AndroidManifest.xml:17:9-36
-30        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-30-->[androidx.core:core:1.9.0] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\7241f257c8a6819728a3f1dfe976f7ce\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
-31        android:debuggable="true"
-32        android:extractNativeLibs="true"
-32-->INJECTED
-33        android:icon="@android:drawable/sym_def_app_icon"
-33-->C:\Users\iqdvi\Documents\reverse\metrics\vr_overlay_native\app\src\main\AndroidManifest.xml:18:9-58
-34        android:label="VR Overlay"
-34-->C:\Users\iqdvi\Documents\reverse\metrics\vr_overlay_native\app\src\main\AndroidManifest.xml:19:9-35
-35        android:persistent="false"
-35-->C:\Users\iqdvi\Documents\reverse\metrics\vr_overlay_native\app\src\main\AndroidManifest.xml:20:9-35
-36        android:testOnly="true"
-37        android:theme="@android:style/Theme.Translucent.NoTitleBar" >
-37-->C:\Users\iqdvi\Documents\reverse\metrics\vr_overlay_native\app\src\main\AndroidManifest.xml:21:9-68
-38        <service
-38-->C:\Users\iqdvi\Documents\reverse\metrics\vr_overlay_native\app\src\main\AndroidManifest.xml:23:9-31:19
-39            android:name="com.vroverlay.metrics.OverlayService"
-39-->C:\Users\iqdvi\Documents\reverse\metrics\vr_overlay_native\app\src\main\AndroidManifest.xml:24:13-43
-40            android:exported="true"
-40-->C:\Users\iqdvi\Documents\reverse\metrics\vr_overlay_native\app\src\main\AndroidManifest.xml:25:13-36
-41            android:foregroundServiceType="specialUse" >
-41-->C:\Users\iqdvi\Documents\reverse\metrics\vr_overlay_native\app\src\main\AndroidManifest.xml:26:13-55
-42            <intent-filter>
-42-->C:\Users\iqdvi\Documents\reverse\metrics\vr_overlay_native\app\src\main\AndroidManifest.xml:28:13-30:29
-43                <action android:name="com.vroverlay.metrics.OverlayService" />
-43-->C:\Users\iqdvi\Documents\reverse\metrics\vr_overlay_native\app\src\main\AndroidManifest.xml:29:17-79
-43-->C:\Users\iqdvi\Documents\reverse\metrics\vr_overlay_native\app\src\main\AndroidManifest.xml:29:25-76
-44            </intent-filter>
-45        </service>
-46
-47        <activity
-47-->C:\Users\iqdvi\Documents\reverse\metrics\vr_overlay_native\app\src\main\AndroidManifest.xml:33:9-44:20
-48            android:name="com.vroverlay.metrics.SettingsActivity"
-48-->C:\Users\iqdvi\Documents\reverse\metrics\vr_overlay_native\app\src\main\AndroidManifest.xml:34:13-45
-49            android:excludeFromRecents="true"
-49-->C:\Users\iqdvi\Documents\reverse\metrics\vr_overlay_native\app\src\main\AndroidManifest.xml:36:13-46
-50            android:exported="true"
-50-->C:\Users\iqdvi\Documents\reverse\metrics\vr_overlay_native\app\src\main\AndroidManifest.xml:35:13-36
-51            android:launchMode="singleTask"
-51-->C:\Users\iqdvi\Documents\reverse\metrics\vr_overlay_native\app\src\main\AndroidManifest.xml:37:13-44
-52            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
-52-->C:\Users\iqdvi\Documents\reverse\metrics\vr_overlay_native\app\src\main\AndroidManifest.xml:38:13-72
-53            <intent-filter>
-53-->C:\Users\iqdvi\Documents\reverse\metrics\vr_overlay_native\app\src\main\AndroidManifest.xml:40:13-43:29
-54                <action android:name="android.intent.action.MAIN" />
-54-->C:\Users\iqdvi\Documents\reverse\metrics\vr_overlay_native\app\src\main\AndroidManifest.xml:41:17-69
-54-->C:\Users\iqdvi\Documents\reverse\metrics\vr_overlay_native\app\src\main\AndroidManifest.xml:41:25-66
-55
-56                <category android:name="android.intent.category.LAUNCHER" />
-56-->C:\Users\iqdvi\Documents\reverse\metrics\vr_overlay_native\app\src\main\AndroidManifest.xml:42:17-77
-56-->C:\Users\iqdvi\Documents\reverse\metrics\vr_overlay_native\app\src\main\AndroidManifest.xml:42:27-74
-57            </intent-filter>
-58        </activity>
+14
+15    <uses-feature
+15-->C:\Users\iqdvi\Documents\reverse\metrics\vr_overlay_native\app\src\main\AndroidManifest.xml:9:5-12:31
+16        android:name="android.hardware.vr.headtracking"
+16-->C:\Users\iqdvi\Documents\reverse\metrics\vr_overlay_native\app\src\main\AndroidManifest.xml:10:9-56
+17        android:required="false"
+17-->C:\Users\iqdvi\Documents\reverse\metrics\vr_overlay_native\app\src\main\AndroidManifest.xml:11:9-33
+18        android:version="1" />
+18-->C:\Users\iqdvi\Documents\reverse\metrics\vr_overlay_native\app\src\main\AndroidManifest.xml:12:9-28
+19
+20    <application
+20-->C:\Users\iqdvi\Documents\reverse\metrics\vr_overlay_native\app\src\main\AndroidManifest.xml:14:5-52:19
+21        android:name="com.vroverlay.metrics.OverlayApplication"
+21-->C:\Users\iqdvi\Documents\reverse\metrics\vr_overlay_native\app\src\main\AndroidManifest.xml:15:9-43
+22        android:allowBackup="false"
+22-->C:\Users\iqdvi\Documents\reverse\metrics\vr_overlay_native\app\src\main\AndroidManifest.xml:16:9-36
+23        android:debuggable="true"
+24        android:extractNativeLibs="false"
+24-->INJECTED
+25        android:icon="@android:drawable/sym_def_app_icon"
+25-->C:\Users\iqdvi\Documents\reverse\metrics\vr_overlay_native\app\src\main\AndroidManifest.xml:17:9-58
+26        android:label="VR Overlay"
+26-->C:\Users\iqdvi\Documents\reverse\metrics\vr_overlay_native\app\src\main\AndroidManifest.xml:18:9-35
+27        android:persistent="false"
+27-->C:\Users\iqdvi\Documents\reverse\metrics\vr_overlay_native\app\src\main\AndroidManifest.xml:19:9-35
+28        android:testOnly="true"
+29        android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+29-->C:\Users\iqdvi\Documents\reverse\metrics\vr_overlay_native\app\src\main\AndroidManifest.xml:20:9-68
+30        <service
+30-->C:\Users\iqdvi\Documents\reverse\metrics\vr_overlay_native\app\src\main\AndroidManifest.xml:22:9-30:19
+31            android:name="com.vroverlay.metrics.OverlayServiceWeb"
+31-->C:\Users\iqdvi\Documents\reverse\metrics\vr_overlay_native\app\src\main\AndroidManifest.xml:23:13-46
+32            android:exported="true"
+32-->C:\Users\iqdvi\Documents\reverse\metrics\vr_overlay_native\app\src\main\AndroidManifest.xml:24:13-36
+33            android:foregroundServiceType="specialUse" >
+33-->C:\Users\iqdvi\Documents\reverse\metrics\vr_overlay_native\app\src\main\AndroidManifest.xml:25:13-55
+34            <intent-filter>
+34-->C:\Users\iqdvi\Documents\reverse\metrics\vr_overlay_native\app\src\main\AndroidManifest.xml:27:13-29:29
+35                <action android:name="com.vroverlay.metrics.OverlayServiceWeb" />
+35-->C:\Users\iqdvi\Documents\reverse\metrics\vr_overlay_native\app\src\main\AndroidManifest.xml:28:17-82
+35-->C:\Users\iqdvi\Documents\reverse\metrics\vr_overlay_native\app\src\main\AndroidManifest.xml:28:25-79
+36            </intent-filter>
+37        </service>
+38
+39        <activity
+39-->C:\Users\iqdvi\Documents\reverse\metrics\vr_overlay_native\app\src\main\AndroidManifest.xml:32:9-43:20
+40            android:name="com.vroverlay.metrics.SettingsActivity"
+40-->C:\Users\iqdvi\Documents\reverse\metrics\vr_overlay_native\app\src\main\AndroidManifest.xml:33:13-45
+41            android:excludeFromRecents="true"
+41-->C:\Users\iqdvi\Documents\reverse\metrics\vr_overlay_native\app\src\main\AndroidManifest.xml:35:13-46
+42            android:exported="true"
+42-->C:\Users\iqdvi\Documents\reverse\metrics\vr_overlay_native\app\src\main\AndroidManifest.xml:34:13-36
+43            android:launchMode="singleTask"
+43-->C:\Users\iqdvi\Documents\reverse\metrics\vr_overlay_native\app\src\main\AndroidManifest.xml:36:13-44
+44            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+44-->C:\Users\iqdvi\Documents\reverse\metrics\vr_overlay_native\app\src\main\AndroidManifest.xml:37:13-72
+45            <intent-filter>
+45-->C:\Users\iqdvi\Documents\reverse\metrics\vr_overlay_native\app\src\main\AndroidManifest.xml:39:13-42:29
+46                <action android:name="android.intent.action.MAIN" />
+46-->C:\Users\iqdvi\Documents\reverse\metrics\vr_overlay_native\app\src\main\AndroidManifest.xml:40:17-69
+46-->C:\Users\iqdvi\Documents\reverse\metrics\vr_overlay_native\app\src\main\AndroidManifest.xml:40:25-66
+47
+48                <category android:name="android.intent.category.LAUNCHER" />
+48-->C:\Users\iqdvi\Documents\reverse\metrics\vr_overlay_native\app\src\main\AndroidManifest.xml:41:17-77
+48-->C:\Users\iqdvi\Documents\reverse\metrics\vr_overlay_native\app\src\main\AndroidManifest.xml:41:27-74
+49            </intent-filter>
+50        </activity>
+51
+52        <provider
+52-->C:\Users\iqdvi\Documents\reverse\metrics\vr_overlay_native\app\src\main\AndroidManifest.xml:45:9-50:77
+53            android:name="com.vroverlay.metrics.OverlaySettingsProvider"
+53-->C:\Users\iqdvi\Documents\reverse\metrics\vr_overlay_native\app\src\main\AndroidManifest.xml:46:13-52
+54            android:authorities="com.vroverlay.metrics.provider"
+54-->C:\Users\iqdvi\Documents\reverse\metrics\vr_overlay_native\app\src\main\AndroidManifest.xml:49:13-65
+55            android:enabled="true"
+55-->C:\Users\iqdvi\Documents\reverse\metrics\vr_overlay_native\app\src\main\AndroidManifest.xml:47:13-35
+56            android:exported="true"
+56-->C:\Users\iqdvi\Documents\reverse\metrics\vr_overlay_native\app\src\main\AndroidManifest.xml:48:13-36
+57            android:permission="android.permission.WRITE_SECURE_SETTINGS" />
+57-->C:\Users\iqdvi\Documents\reverse\metrics\vr_overlay_native\app\src\main\AndroidManifest.xml:50:13-74
+58    </application>
 59
-60        <provider
-60-->C:\Users\iqdvi\Documents\reverse\metrics\vr_overlay_native\app\src\main\AndroidManifest.xml:46:9-51:77
-61            android:name="com.vroverlay.metrics.OverlaySettingsProvider"
-61-->C:\Users\iqdvi\Documents\reverse\metrics\vr_overlay_native\app\src\main\AndroidManifest.xml:47:13-52
-62            android:authorities="com.vroverlay.metrics.provider"
-62-->C:\Users\iqdvi\Documents\reverse\metrics\vr_overlay_native\app\src\main\AndroidManifest.xml:50:13-65
-63            android:enabled="true"
-63-->C:\Users\iqdvi\Documents\reverse\metrics\vr_overlay_native\app\src\main\AndroidManifest.xml:48:13-35
-64            android:exported="true"
-64-->C:\Users\iqdvi\Documents\reverse\metrics\vr_overlay_native\app\src\main\AndroidManifest.xml:49:13-36
-65            android:permission="android.permission.WRITE_SECURE_SETTINGS" />
-65-->C:\Users\iqdvi\Documents\reverse\metrics\vr_overlay_native\app\src\main\AndroidManifest.xml:51:13-74
-66        <provider
-66-->[androidx.emoji2:emoji2:1.2.0] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\9ba3f3f78bc75eb84e4e9a4984d4641c\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
-67            android:name="androidx.startup.InitializationProvider"
-67-->[androidx.emoji2:emoji2:1.2.0] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\9ba3f3f78bc75eb84e4e9a4984d4641c\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
-68            android:authorities="com.vroverlay.metrics.androidx-startup"
-68-->[androidx.emoji2:emoji2:1.2.0] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\9ba3f3f78bc75eb84e4e9a4984d4641c\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
-69            android:exported="false" >
-69-->[androidx.emoji2:emoji2:1.2.0] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\9ba3f3f78bc75eb84e4e9a4984d4641c\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
-70            <meta-data
-70-->[androidx.emoji2:emoji2:1.2.0] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\9ba3f3f78bc75eb84e4e9a4984d4641c\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
-71                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-71-->[androidx.emoji2:emoji2:1.2.0] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\9ba3f3f78bc75eb84e4e9a4984d4641c\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
-72                android:value="androidx.startup" />
-72-->[androidx.emoji2:emoji2:1.2.0] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\9ba3f3f78bc75eb84e4e9a4984d4641c\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
-73            <meta-data
-73-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\c10ac40773446cf1dfb21c8c61c7c71b\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
-74                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-74-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\c10ac40773446cf1dfb21c8c61c7c71b\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
-75                android:value="androidx.startup" />
-75-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\iqdvi\.gradle\caches\9.4.1\transforms\c10ac40773446cf1dfb21c8c61c7c71b\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
-76        </provider>
-77    </application>
-78
-79</manifest>
+60</manifest>

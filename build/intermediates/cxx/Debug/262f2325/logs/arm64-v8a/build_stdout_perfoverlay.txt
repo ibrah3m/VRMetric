@@ -1,2 +1,0 @@
-ninja: Entering directory `C:\Users\iqdvi\Documents\reverse\metrics\vr_overlay_native\app\.cxx\Debug\262f2325\arm64-v8a'
-ninja: no work to do.

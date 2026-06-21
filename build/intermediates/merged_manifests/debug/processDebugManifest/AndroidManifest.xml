@@ -11,36 +11,28 @@
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE_OVERLAY" />
-    <uses-permission android:name="android.permission.WAKE_LOCK" />
 
     <uses-feature
         android:name="android.hardware.vr.headtracking"
         android:required="false"
         android:version="1" />
 
-    <permission
-        android:name="com.vroverlay.metrics.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
-        android:protectionLevel="signature" />
-
-    <uses-permission android:name="com.vroverlay.metrics.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
-
     <application
         android:name="com.vroverlay.metrics.OverlayApplication"
         android:allowBackup="false"
-        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
         android:debuggable="true"
-        android:extractNativeLibs="true"
+        android:extractNativeLibs="false"
         android:icon="@android:drawable/sym_def_app_icon"
         android:label="VR Overlay"
         android:persistent="false"
         android:testOnly="true"
         android:theme="@android:style/Theme.Translucent.NoTitleBar" >
         <service
-            android:name="com.vroverlay.metrics.OverlayService"
+            android:name="com.vroverlay.metrics.OverlayServiceWeb"
             android:exported="true"
             android:foregroundServiceType="specialUse" >
             <intent-filter>
-                <action android:name="com.vroverlay.metrics.OverlayService" />
+                <action android:name="com.vroverlay.metrics.OverlayServiceWeb" />
             </intent-filter>
         </service>
 
@@ -63,17 +55,6 @@
             android:enabled="true"
             android:exported="true"
             android:permission="android.permission.WRITE_SECURE_SETTINGS" />
-        <provider
-            android:name="androidx.startup.InitializationProvider"
-            android:authorities="com.vroverlay.metrics.androidx-startup"
-            android:exported="false" >
-            <meta-data
-                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-                android:value="androidx.startup" />
-            <meta-data
-                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-                android:value="androidx.startup" />
-        </provider>
     </application>
 
 </manifest>
