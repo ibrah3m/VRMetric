@@ -13,10 +13,12 @@ target_link_libraries(native-lib
     ${GLES_LIB}
     ${EGL_LIB}
     ${LOG_LIB}
+    dl
 )
 
 target_compile_options(native-lib PRIVATE
     -Wall
     -Wextra
     -std=c++17
+    -Wno-missing-field-initializers
 )

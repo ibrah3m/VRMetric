@@ -161,6 +161,7 @@ public class PerfDebugOverlay {
                     this.DebugData = debugText;
                     this.DirtyDebugData = true;
                     this.DirtyTexture = true;
+                    Log.i(TAG, "Debug data set: " + debugText);
                 }
             }
         }
@@ -366,6 +367,7 @@ public class PerfDebugOverlay {
 
                 if (this.DirtyDebugData) {
                     this.DirtyDebugData = false;
+                    Log.i(TAG, "Drawing debug data: " + (this.DebugData != null ? this.DebugData : "null"));
                     DrawDebugData(this.DebugData);
                 }
 

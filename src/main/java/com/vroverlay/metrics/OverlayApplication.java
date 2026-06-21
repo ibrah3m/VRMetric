@@ -4,11 +4,13 @@ import android.app.Application;
 import android.content.Intent;
 import android.util.Log;
 import com.vroverlay.metrics.sdk.VROverlayManager;
+import com.vroverlay.metrics.sdk.SimpleSettingsConfig;
 
 public class OverlayApplication extends Application {
     private static final String TAG = "OverlayApplication";
 
     public static VROverlayManager overlayManager;
+    public static SimpleSettingsConfig settingsConfig;
 
     @Override
     public void onCreate() {
@@ -16,7 +18,8 @@ public class OverlayApplication extends Application {
 
         Log.i(TAG, "Creating VR Overlay Application");
 
-        overlayManager = new VROverlayManager(this);
+        settingsConfig = new SimpleSettingsConfig(getApplicationContext());
+        overlayManager = new VROverlayManager(settingsConfig);
         Log.i(TAG, "VR Overlay Manager created with native rendering");
 
         startOverlayService();

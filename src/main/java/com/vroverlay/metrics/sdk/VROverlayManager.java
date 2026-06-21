@@ -1,6 +1,5 @@
 package com.vroverlay.metrics.sdk;
 
-import android.content.Context;
 import android.graphics.Point;
 import android.util.Log;
 import androidx.annotation.NonNull;
@@ -14,16 +13,10 @@ public class VROverlayManager {
     public static final int OVERLAY_HEIGHT = 136;
 
     private SimpleSettingsConfig settingsConfig;
-    private Context context;
 
-    public VROverlayManager(@NonNull Context context) {
-        this.context = context;
-        this.settingsConfig = new SimpleSettingsConfig(context);
-        showHelloWorld();
-    }
-
-    public void setSettingsConfig(@NonNull SimpleSettingsConfig config) {
+    public VROverlayManager(@NonNull SimpleSettingsConfig config) {
         this.settingsConfig = config;
+        showHelloWorld();
     }
 
     private void showHelloWorld() {
@@ -31,6 +24,9 @@ public class VROverlayManager {
             PerfDebugOverlay overlay = settingsConfig.getPerfDebugOverlay();
             if (overlay != null) {
                 overlay.SetDebugData("##  !!  ##");
+                Log.i(TAG, "Hello World debug data set on overlay");
+            } else {
+                Log.e(TAG, "PerfDebugOverlay is null in showHelloWorld");
             }
         } catch (Exception e) {
             Log.e(TAG, "Failed to set Hello World", e);

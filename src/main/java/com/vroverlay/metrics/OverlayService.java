@@ -19,7 +19,6 @@ public class OverlayService extends Service {
     private static final int NOTIFICATION_ID = 1;
 
     private volatile boolean isRunning = false;
-    private SimpleSettingsConfig settingsConfig;
     private NativeOverlayRenderer nativeRenderer;
 
     @Override
@@ -27,10 +26,6 @@ public class OverlayService extends Service {
         super.onCreate();
         Log.i(TAG, "VR Overlay Service creating");
         createNotificationChannel();
-
-        settingsConfig = new SimpleSettingsConfig(getApplicationContext());
-
-        OverlayApplication.overlayManager.setSettingsConfig(settingsConfig);
     }
 
     @Override
@@ -48,7 +43,13 @@ public class OverlayService extends Service {
         startForeground(NOTIFICATION_ID, notification);
 
         if (!isRunning) {
-            startNativeRenderer(settingsConfig);
+            SimpleSettingsConfig settings = OverlayApplication.settingsConfig;
+            if (settings != null) {
+                startNativeRenderer(settings);
+                Log.i(TAG, "Native overlay renderer started with shared settings");
+            } else {
+                Log.e(TAG, "Shared settings config is null, cannot start renderer");
+            }
             isRunning = true;
         }
         return START_STICKY;
@@ -79,7 +80,6 @@ public class OverlayService extends Service {
 
         if (nativeRenderer != null && settings != null) {
             nativeRenderer.showOverlay(settings);
-            Log.i(TAG, "Native overlay renderer started");
         } else {
             Log.e(TAG, "Cannot start native renderer: renderer=" + nativeRenderer + ", settings=" + settings);
         }
